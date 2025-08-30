@@ -65,6 +65,9 @@ use Carbon\Carbon;
 <body>
 
     <center>
+        <h3 class="font-medium" style="margin-bottom:25px;">GUDANG MONA TOSERBA<br>
+        Jln. Magelang purworejo km 10 Desa Tempurejo Kec Tempuran Kab. Magelang</h3>
+        <hr>
         <h1 class="font-medium">Laporan Barang Masuk</h1>
         @if($tglawal == '')
         <h4 class="font-medium">Semua Tanggal</h4>

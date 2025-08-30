@@ -72,11 +72,9 @@ use Carbon\Carbon;
 <body onload="window.print()">
 
     <center>
-        @if($web->web_logo == '' || $web->web_logo == 'default.png')
-        <img src="{{url('/assets/default/web/default.png')}}" width="80px" alt="">
-        @else
-        <img src="{{asset('storage/web/' . $web->web_logo)}}" width="80px" alt="">
-        @endif
+        <h3 class="font-medium" style="margin-bottom:25px;">GUDANG MONA TOSERBA<br>
+        Jln. Magelang purworejo km 10 Desa Tempurejo Kec Tempuran Kab. Magelang</h3>
+        <hr>
     </center>
 
     <center>

@@ -74,11 +74,9 @@ use Carbon\Carbon;
 <body onload="window.print()">
 
     <center>
-        @if($web->web_logo == '' || $web->web_logo == 'default.png')
-        <img src="{{url('/assets/default/web/default.png')}}" width="80px" alt="">
-        @else
-        <img src="{{url('/assets/default/web/default.png')}}" width="80px" alt="">
-        @endif
+        <h3 class="font-medium" style="margin-bottom:25px;">GUDANG MONA TOSERBA<br>
+        Jln. Magelang purworejo km 10 Desa Tempurejo Kec Tempuran Kab. Magelang</h3>
+        <hr>
     </center>
 
     <center>
@@ -105,7 +103,7 @@ use Carbon\Carbon;
         <tbody>
             @php $no=1; @endphp
             @foreach($data as $d)
-            <?php 
+            <?php
             if($tglawal == ''){
                 $jmlmasuk = BarangmasukModel::leftJoin('tbl_barang', 'tbl_barang.barang_kode', '=', 'tbl_barangmasuk.barang_kode')->leftJoin('tbl_customer', 'tbl_customer.customer_id', '=', 'tbl_barangmasuk.customer_id')->where('tbl_barangmasuk.barang_kode', '=', $d->barang_kode)->sum('tbl_barangmasuk.bm_jumlah');
             }else{
